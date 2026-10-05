@@ -46,7 +46,7 @@ $ make
 **Hasil:** 
 Proses `make` akan mengompilasi seluruh *source code* C menjadi *image* bernama `xinu.elf`. Sistem juga secara otomatis menyalin *image* tersebut ke direktori server TFTP (`/srv/tftp/xinu.boot`) agar siap diunduh oleh *Backend VM*.
 
-![Terminal Compile Xinu](assets/Screenshot2026-10-05140657.png)
+![Terminal Compile Xinu](assets/backend.png)
 
 *Gambar 1: Proses kompilasi source code Xinu menggunakan perintah `make` pada Development-System VM.*
 
@@ -71,7 +71,7 @@ $ sudo minicom
 **Hasil:** 
 Terminal Development-System kini terhubung langsung ke *console* Xinu di Backend VM. Prompt terminal berubah dari `xinu@xinu-develop-end:$` menjadi **`xsh$`**, yang menandakan bahwa praktikan kini berada di dalam *Xinu Shell*.
 
-![Koneksi Minicom](assets/'Screenshot2026-10-05140732.png')
+![Koneksi Minicom](assets/minicom.png)
 
 *Gambar 3: Koneksi berhasil melalui Minicom, ditandai dengan munculnya prompt `xsh$`.*
 

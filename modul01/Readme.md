@@ -82,7 +82,7 @@ Pada prompt `xsh$`, praktikan dapat memberikan perintah langsung ke kernel Xinu.
 xsh$ help
 ```
 
-![Perintah Help Xinu](assets/'image.png')
+![Perintah Help Xinu](assets/image.png)
 
 *Gambar 4: Output dari perintah `help` yang menampilkan daftar command bawaan Xinu OS.*
 

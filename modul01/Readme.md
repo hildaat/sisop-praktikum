@@ -4,11 +4,11 @@
 ### Identitas Praktikan
 | Item | Keterangan |
 |------|------------|
-| **Nama** | Nuevalen Refitra Alswando |
-| **NIM** | 103072430008 |
-| **Kelas** | IF-04-01 |
-| **Asisten Praktikum** | [Isi Nama Asisten Anda] |
-| **Tanggal Praktikum** | [Isi Tanggal Praktikum] |
+| **Nama** | hilda toimatul abidah |
+| **NIM** | 1072500149 |
+| **Kelas** | IF-05-04 |
+| **Asisten Praktikum** | [valen dan galang] |
+| **Tanggal Praktikum** | [2 oktober 2026] |
 
 ---
 
@@ -46,7 +46,7 @@ $ make
 **Hasil:** 
 Proses `make` akan mengompilasi seluruh *source code* C menjadi *image* bernama `xinu.elf`. Sistem juga secara otomatis menyalin *image* tersebut ke direktori server TFTP (`/srv/tftp/xinu.boot`) agar siap diunduh oleh *Backend VM*.
 
-![Terminal Compile Xinu](assets/Screenshot 2026-10-05 140657.png)
+![Terminal Compile Xinu](assets/Screenshot2026-10-05140657.png)
 
 *Gambar 1: Proses kompilasi source code Xinu menggunakan perintah `make` pada Development-System VM.*
 
@@ -57,7 +57,7 @@ Selanjutnya, **Backend VM** dijalankan. Karena Backend VM tidak memiliki hardisk
 3. Backend VM mengunduh file `xinu.boot` melalui protokol TFTP.
 4. Xinu OS berhasil dimuat ke memori dan berjalan.
 
-![Booting Backend VM](assets/'Screenshot 2026-10-05 140510.png')
+![Booting Backend VM](assets/'Screenshot2026-10-05140510.png')
 
 *Gambar 2: Tampilan Backend VM saat melakukan booting melalui jaringan (PXE) dan memuat GRUB.*
 
@@ -71,7 +71,7 @@ $ sudo minicom
 **Hasil:** 
 Terminal Development-System kini terhubung langsung ke *console* Xinu di Backend VM. Prompt terminal berubah dari `xinu@xinu-develop-end:$` menjadi **`xsh$`**, yang menandakan bahwa praktikan kini berada di dalam *Xinu Shell*.
 
-![Koneksi Minicom](assets/'Screenshot 2026-10-05 140732.png')
+![Koneksi Minicom](assets/'Screenshot2026-10-05140732.png')
 
 *Gambar 3: Koneksi berhasil melalui Minicom, ditandai dengan munculnya prompt `xsh$`.*
 
